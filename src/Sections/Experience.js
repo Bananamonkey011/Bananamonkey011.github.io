@@ -9,7 +9,11 @@ const Experience = () => {
 		easing: easingcurve,
 	});
 	return (
-		<div className="Experience">
+		<div className="Experience" >
+			{
+				// eslint-disable-next-line
+				<a className="anchor" id="Experience" />
+			}
 			<h2 className="experience-title">
 				<span className="accent">&#123;</span>E
 				<span className="accent">&#125;</span>

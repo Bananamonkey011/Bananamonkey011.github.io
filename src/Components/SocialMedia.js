@@ -5,11 +5,12 @@ import {
 	SlSocialGithub,
 } from "react-icons/sl";
 import { Fade } from "react-reveal";
+import HueSlider from '../Components/HueSlider';
 
 const SocialMedia = () => {
 	return (
 		<div className="SocialMedia">
-			<Fade top cascade>
+			<Fade left cascade>
 				<a
 					className="social-media-icon"
 					href="https://github.com/Bananamonkey011"
@@ -28,6 +29,8 @@ const SocialMedia = () => {
 				>
 					<SlSocialLinkedin />
 				</a>
+				<HueSlider/>
+				<div className="slider">wassup</div>
 			</Fade>
 		</div>
 	);
