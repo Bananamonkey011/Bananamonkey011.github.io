@@ -14,7 +14,7 @@ const ProjectCard = ({
 			<ul className="project-card-tags">
 				{tags.map((tag, index) => {
 					return (
-						<li key={index} className="experience-card-tag">
+						<li key={index} className="project-card-tag">
 							{tag}
 						</li>
 					);

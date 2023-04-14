@@ -330,6 +330,7 @@ a.anchor {
   border-color: var(--accent);
   align-self: center;
 }
+
 .experience-card-collapse {
   max-height: 0;
   overflow: hidden;
@@ -427,6 +428,7 @@ a.anchor {
   margin: 0;
   font-weight: 400;
   width: 100%;
+  
 }
 
 .project-card-tag {
