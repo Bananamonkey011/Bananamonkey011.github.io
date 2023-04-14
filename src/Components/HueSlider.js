@@ -6,6 +6,12 @@ const HueSlider = () => {
 	const [hue, setHue] = useState(189);
 
 	useEffect(() => {
+		const randomHue = Math.floor(Math.random() * 360);
+		setHue(randomHue);
+	},[]);
+
+
+	useEffect(() => {
 		document.querySelector(":root").style.setProperty("--hue", hue);
 		console.log(hue);
 	}, [hue]);

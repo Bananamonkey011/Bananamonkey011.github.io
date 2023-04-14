@@ -10,8 +10,8 @@
   --card-title-font-size: 250%;
   --card-desc-font-size: 100%;
   --card-tags-font-size: 100%;
-  --landing-text-font-size: 400%;
-  --landing-role-font-size: 75%;
+  --landing-text-font-size: 5vw;
+  --landing-role-font-size: 2vw;
   --content-font-size: 200%;
 }
 
@@ -68,6 +68,7 @@ a.anchor {
   width: 100vw;
   z-index: 999;
   overflow-y: hidden;
+  touch-action: none;
 }
 
 .mobile-header-menu-btn {
@@ -194,6 +195,7 @@ a.anchor {
   width: auto;
   position: absolute;
   top: 6%;
+  left: -1%;
 }
 
 .landing-img-parallax-wrapper,
@@ -279,11 +281,12 @@ a.anchor {
 .ExperienceCard {
   box-sizing: border-box;
   width: 450px;
-  height: 300px;
+  /* height: 300px; */
+  height: fit-content;
   background-color: rgb(0, 0, 0);
   color: white;
   display: grid;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 3fr auto 1fr;
   padding: 20px;
   border-radius: 20px;
   margin: 10px;
@@ -298,11 +301,18 @@ a.anchor {
   margin: 0;
 }
 
+.experience-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .experience-card-description {
-  font-size: var(--card-desc-font-size);
   text-align: left;
   align-self: center;
+  max-height: 1000px;
   font-weight: 300;
+  font-size: var(--card-desc-font-size);
 }
 
 .experience-card-tags {
@@ -319,6 +329,16 @@ a.anchor {
   border-left: solid;
   border-color: var(--accent);
   align-self: center;
+}
+.experience-card-collapse {
+  max-height: 0;
+  overflow: hidden;
+  font-weight: 300;
+  font-size: var(--card-desc-font-size);
+  color: black;
+  transition: max-height 0.7s;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .experience-card-tag:first-child {
@@ -339,9 +359,11 @@ a.anchor {
   border-color: white;
 }
 
+.ExperienceCard:hover .experience-card-collapse {
+  max-height: 1000px;
+}
+
 .Projects {
-  /* transform: skewY(-8deg); */
-  /* background-color: white; */
   background-color: hsl(var(--hue), 100%, 90%);
   padding-bottom: 10vw;
 }
@@ -359,13 +381,12 @@ a.anchor {
   grid-column: span 2;
   box-sizing: border-box;
   overflow-wrap: break-word;
-  /* width: 500px; */
   min-height: 300px;
   height: fit-content;
   background-color: rgb(0, 0, 0);
   color: white;
   display: grid;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 3fr auto 1fr;
   padding: 20px;
   border-radius: 20px;
   margin: 10px;
@@ -386,7 +407,15 @@ a.anchor {
   text-align: left;
   align-self: center;
   font-weight: 300;
-  /* display: none; */
+}
+
+.project-card-collapse {
+  max-height: 0;
+  overflow: hidden;
+  font-weight: 300;
+  font-size: var(--card-desc-font-size);
+  color: black;
+  transition: max-height 0.7s;
 }
 
 .project-card-tags {
@@ -424,6 +453,10 @@ a.anchor {
 
 .ProjectCard:hover .project-card-tag {
   border-color: white;
+}
+
+.ProjectCard:hover .project-card-collapse {
+  max-height: 1000px;
 }
 
 .SocialMedia {
@@ -541,7 +574,7 @@ input[type='range']::-webkit-slider-thumb {
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   :root {
     --title-font-size: 300%;
     --card-title-font-size: 200%;
@@ -633,6 +666,10 @@ input[type='range']::-webkit-slider-thumb {
   }
   .project-placeholder {
     display: none;
+  }
+
+  .ProjectCard:hover {
+    transform: scale(1.05);
   }
   .contact-content {
     flex-direction: column;
