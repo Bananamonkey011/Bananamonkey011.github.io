@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+@import 'rsuite/dist/rsuite-no-reset.min.css';
 /* Default hsl(189, 100%, 69%)*/
 
 :root {
@@ -125,6 +125,8 @@ a.anchor {
   justify-content: right;
   overflow: hidden;
   margin: 0;
+  padding-inline: 20px;
+  /* margin-inline: 20px; */
 }
 
 .mobile-header-nav-item {
@@ -180,21 +182,25 @@ a.anchor {
 }
 
 .landing-white-bg {
-  height: 100%;
-  width: auto;
+  max-height: 100%;
+  max-width: 100%;
   position: absolute;
+  top: 40%;
+  transform: translate(0%, -50%);
 }
 .landing-color-bg {
-  height: 95%;
-  width: auto;
+  max-height: 95%;
+  max-width: 95%;
   position: absolute;
-  top: 2.5%;
+  top: 40%;
+  transform: translate(0%, -50%);
 }
 .landing-portrait {
-  height: 90%;
-  width: auto;
+  max-height: 90%;
+  max-width: 90%;
   position: absolute;
-  top: 6%;
+  top: 41%;
+  transform: translate(0%, -50%);
   left: -1%;
 }
 
@@ -260,12 +266,15 @@ a.anchor {
 
 .about-description {
   padding-inline: 10%;
-  font-size: 200%;
+  font-size: 180%;
   text-align: left;
   font-weight: 300;
   padding-right: 20px;
 }
-
+.about-accent {
+  color: var(--dark-accent);
+  font-weight: 600;
+}
 .Experience {
   /* transform: skewY(-8deg); */
 }
@@ -329,6 +338,12 @@ a.anchor {
   border-left: solid;
   border-color: var(--accent);
   align-self: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.experience-card-tag-content {
+  display: inline-block;
 }
 
 .experience-card-collapse {
@@ -338,8 +353,7 @@ a.anchor {
   font-size: var(--card-desc-font-size);
   color: black;
   transition: max-height 0.7s;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .experience-card-tag:first-child {
@@ -428,7 +442,6 @@ a.anchor {
   margin: 0;
   font-weight: 400;
   width: 100%;
-  
 }
 
 .project-card-tag {
@@ -576,6 +589,25 @@ input[type='range']::-webkit-slider-thumb {
   transition: 0.5s;
 }
 
+.rs-timeline-item-content > *{
+	margin: 0;
+}
+.rs-timeline-item-content > ul{
+	padding-inline-start: 20px;
+}
+.rs-timeline-item-content > ul > li{
+	list-style: disc;
+	margin-block:5px;
+}
+
+.rs-timeline-item-last > .rs-timeline-item-dot::before,
+.rs-timeline-item-dot::before,
+.rs-timeline-item-tail {
+  background-color: var(--dark-accent);
+}
+.rs-timeline-item-tail, .rs-timeline-item:last-child > .rs-timeline-item-tail {
+	height: 100%
+}
 @media only screen and (max-width: 800px) {
   :root {
     --title-font-size: 300%;
@@ -638,7 +670,8 @@ input[type='range']::-webkit-slider-thumb {
     margin-block: 10px;
     position: absolute;
     width: max-content;
-    top: 150vw;
+    top: 75%;
+    transform: translate(0%, -50%);
   }
 
   .About {
@@ -650,8 +683,10 @@ input[type='range']::-webkit-slider-thumb {
   .about-break {
     display: block;
   }
+  
   .about-description {
-    font-size: 150%;
+	margin: 10px;
+    font-size: 120%;
   }
 
   .SocialMedia {
@@ -661,6 +696,7 @@ input[type='range']::-webkit-slider-thumb {
 
   .slider-container {
     flex-direction: column-reverse;
+    padding-inline: 5pxt;
   }
 
   .projects {

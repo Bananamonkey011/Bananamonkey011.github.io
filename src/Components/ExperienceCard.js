@@ -15,7 +15,7 @@ const ExperienceCard = ({
 				{tags.map((tag, index) => {
 					return (
 						<li key={index} className="experience-card-tag">
-							{tag}
+							<span className="experience-card-tag-content">{tag}</span>
 						</li>
 					);
 				})}

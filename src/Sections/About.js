@@ -34,13 +34,13 @@ const About = () => {
 				<hr className="about-break" />
 				<div ref={parallaxRight}>
 					<p className="about-description">
-						I’m currently a student at the University of Illinois
-						Urbana-Champaign studying Computer-Science + Economics.
-						I love working with groundbreaking tech want to explore
-						it’s use in as many domains as possible. I aspire to
-						meet new people of various backgrounds and learn from
-						their experiences. I will never back down from a
-						challenge.
+						Hi! My name is Manan and I’m currently pursuing a B.S. in Computer-Science + Economics and a Minor in Math at the University of Illinois Urbana-Champaign (UIUC). I have experience in a variety of CS sub-disciplines such as Full-Stack Development, I love exploring new industries and learning how to apply my skills to them. However, I am currently interested in gaining some more experience in fintech.
+						<br />
+						<br />
+						I have a copious amount of experience working with people from all backgrounds and am always eager to meet someone new. Feel free to reach out to me to talk about anything!
+						<br />
+						<br />
+						In my free time I love cooking, playing video games, and hanging out with friends. I am always down to grab a bite or go for a walk!
 					</p>
 				</div>
 			</div>
