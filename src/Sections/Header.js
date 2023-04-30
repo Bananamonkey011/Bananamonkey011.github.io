@@ -10,7 +10,6 @@ import HueSlider from "../Components/HueSlider";
 
 const Header = () => {
 	let width = window.screen.width;
-	console.log(width);
 	if (width < 700) {
 		return <MobileHeader />;
 	} else {

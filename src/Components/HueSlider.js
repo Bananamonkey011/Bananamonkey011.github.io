@@ -13,7 +13,6 @@ const HueSlider = () => {
 
 	useEffect(() => {
 		document.querySelector(":root").style.setProperty("--hue", hue);
-		console.log(hue);
 	}, [hue]);
 
 	return (
