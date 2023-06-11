@@ -24,6 +24,7 @@ const Experience = () => {
 			</h2>
 
 			<div className="experiences" ref={ref}>
+				
 				<ExperienceCard
 					title="Disruption Lab"
 					description="Disruption Lab is an academic organization on campus that uses emerging tech to build solutions for clients nationwide. While with Disruption Lab, I have worked on many projects with different teams in a variety of roles to build solutions for external clients."
@@ -40,7 +41,7 @@ const Experience = () => {
 										maintaining privacy and data integrity
 									</li>
 									<li>
-										Acted as Scrum Master for a team of 5
+										Acted as scrum master for a team of 5
 										SWE's
 									</li>
 									<li>
@@ -71,15 +72,15 @@ const Experience = () => {
 										information for a government agency
 									</li>
 									<li>
-										Used Solidty to build smart contracts to
-										handle supply chain logistics
+										Used Solidity to build smart contracts
+										to handle supply chain logistics
 									</li>
 									<li>
 										Suggested an alteration to delegation of
 										task to improve efficiency and complete
 										project on time
 									</li>
-									<li>Followed Agile Methodolgy</li>
+									<li>Followed Agile MethodoloFgy</li>
 								</ul>
 							</Timeline.Item>
 							<Timeline.Item>
@@ -125,8 +126,15 @@ const Experience = () => {
 										check 20+ input parameters ensure input
 										validity.
 									</li>
+									<li>
+										Co-Authored a forthcoming publication
+										detailing the computation and
+										development behind the Crispr-Copies
+										tool
+									</li>
 								</ul>
 							</Timeline.Item>
+							
 							<Timeline.Item>
 								<h4>Site Directed Mutagensis</h4>
 								<ul>
