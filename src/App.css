@@ -134,7 +134,7 @@ a.anchor {
   width: 100%;
   height: 100%;
   padding: 20px;
-  font-weight: 200;
+  font-weight: 300;
   color: white;
   border: none;
   transition: 0.3s;
@@ -148,7 +148,7 @@ a.anchor {
   background-color: rgb(20, 20, 20);
   height: 100%;
   padding: 20px;
-  font-weight: 200;
+  font-weight: 300;
   color: white;
   border: none;
   transition: 0.3s;
@@ -616,7 +616,7 @@ input[type='range']::-webkit-slider-thumb {
 .rs-timeline-item-tail, .rs-timeline-item:last-child > .rs-timeline-item-tail {
 	height: 100%
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 650px) {
   :root {
     --title-font-size: 300%;
     --card-title-font-size: 200%;

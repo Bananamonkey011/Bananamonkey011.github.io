@@ -24,7 +24,53 @@ const Experience = () => {
 			</h2>
 
 			<div className="experiences" ref={ref}>
-				
+				<ExperienceCard
+					title="Synchrony"
+					description="Synchrony is a Fortune 200 financial company that provides consumer financing. At Synchrony I worked on the Product Incubation Team which was tasked with rapidly researching, building, and testing POCs of new products and services."
+					collapse={
+						<Timeline align="left">
+							<Timeline.Item>
+								<h4>Project Live (Present)</h4>
+								<ul>
+									<li>
+										Spearheaded the end-to-end development
+										of a live commerce financing POC,
+										working independently to conceptualize,
+										design, and implement innovative
+										solutions for Synchrony’s attempt at
+										breaking into the $526.72 billion global
+										industry.
+									</li>
+									<li>
+										Engaged in direct collaboration with
+										high-level executives, including the
+										Head of Product Incubation, actively
+										challenging existing assumptions and
+										proposing alternative approaches,
+										resulting in the adoption of novel
+										technologies and methodologies in the
+										POCs
+									</li>
+								</ul>
+							</Timeline.Item>
+							<Timeline.Item>
+								<h4>GPT-search (Present)</h4>
+								<ul>
+									<li>
+										Engineered a POC that revolutionized the
+										partner brands’ product ecosystem by
+										creating a consolidated marketplace,
+										enabling users to effortlessly search
+										for products using reverse image search
+										and GPT-powered technology.
+									</li>
+								</ul>
+							</Timeline.Item>
+						</Timeline>
+					}
+					tags={["Rapid Prototyping", "OpenCV", "GPT"]}
+				/>
+
 				<ExperienceCard
 					title="Disruption Lab"
 					description="Disruption Lab is an academic organization on campus that uses emerging tech to build solutions for clients nationwide. While with Disruption Lab, I have worked on many projects with different teams in a variety of roles to build solutions for external clients."
@@ -134,7 +180,7 @@ const Experience = () => {
 									</li>
 								</ul>
 							</Timeline.Item>
-							
+
 							<Timeline.Item>
 								<h4>Site Directed Mutagensis</h4>
 								<ul>
